@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenBoard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./icons/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="options-cont">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="tools-cont scale-tools">
+      <img class="pencil" src="./icons/Pencil.svg" />
+      <img class="eraser" src="./icons/Eraser.svg" />
+      <img class="download" src="./icons/Download.svg" />
+      <img class="redo" src="./icons/Redo.svg" />
+      <img class="undo" src="./icons/Undo.svg" />
+      <img class="sticky" src="./icons/StickyNote.svg" />
+      <img class="upload" src="./icons/Upload.svg" />
+
+    </div>
+
+    <div class="pencil-tool-cont">
+      <div class="pencil-width-cont">
+        <input class="pencil-width" type="range" min="2" max="10" value="3" />
+      </div>
+
+      <div class="pencil-color-cont">
+        <div class="pencil-color black"></div>
+        <div class="pencil-color blue"></div>
+        <div class="pencil-color red"></div>
+      </div>
+    </div>
+
+    <div class="eraser-tool-cont">
+      <input class="eraser-width" type="range" min="2" max="10" value="3" />
+    </div>
+
+    <!-- <div class="sticky-cont">
+            <div class="header-cont">
+                <div class="minimise"></div>
+                <div class="remove"></div>
+            </div>
+            <div class="notes-cont">
+                <textarea></textarea>
+            </div>
+        </div> -->
+
+    <canvas></canvas>
+
+    <script src="./tools.js"></script>
+    <script src="./canvas.js"></script>
+  </body>
+</html>
