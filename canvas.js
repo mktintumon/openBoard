@@ -7,7 +7,7 @@ let mouseDown = false;
 let pencilColor = document.querySelectorAll(".pencil-color")
 let pencilWidthEle = document.querySelector(".pencil-width")
 let eraserWidthEle = document.querySelector(".eraser-width")
-let download = document.querySelector(".download")
+let download = document.querySelector(".download") 
 let redo = document.querySelector(".redo")
 let undo = document.querySelector(".undo")
 
